@@ -1,0 +1,33 @@
+﻿@model Inventory
+@{
+
+    ViewBag.Title = "Index";
+    
+}
+
+
+<div>
+@foreach (CarProj.Models.Car s in Model.Warehouse)
+{
+    <div class="well col-md-6 col-xs-12">
+        <div class="row">
+            <div class="col-xs-6 "><img class="img-thumbnail" src=@s.Pictures height="200" width="200"> </div>
+
+            <div class="col-md-6 col-xs-6 text-left">
+
+                <h3>@s.Makemodel</h3>
+
+                <p>@s.Description</p>
+                <p>With only <b>@s.Mileage</b> miles! </p>
+            </div>
+        </div>
+
+    </div>
+
+
+}
+
+    </div>
+
+
+

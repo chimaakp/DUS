@@ -1,0 +1,22 @@
+﻿@model CarProj.Models.ContactModels
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Contact</h2>
+<form>
+    <div class="form-horizontal form-control">
+        
+        <div>
+            @Html.LabelFor(m => m.name, "Name");
+            @Html.TextBoxFor(m => m.name);
+        </div>
+       
+        <div>
+            @Html.LabelFor(m => m.email, "Email Address");
+        @Html.TextBoxFor(m => m.email);
+    </div>
+        
+    </div>
+</form>
+
